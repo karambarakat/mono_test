@@ -1,4 +1,5 @@
 packages:
   - 'libs/**'
+  - 'libs2/**'
   - '!out'
 

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "workspaces": [
-    "libs/*"
+    "libs/*",
+    "libs2/**"
   ],
   "scripts": {
     "test": "echo monorepo script"
