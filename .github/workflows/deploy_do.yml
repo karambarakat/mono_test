@@ -1,0 +1,16 @@
+name: deploy-do
+run-name: deploy-do
+
+on:
+  push:
+   branches: no-dup
+   
+jobs:
+  deploy:
+    name: install docts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+      - run: doctl app update ${{ env.DIGITALOCEAN_PROJECT_ID }} --spec app-spec.yaml
