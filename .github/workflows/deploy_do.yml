@@ -13,4 +13,5 @@ jobs:
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-      - run: doctl app update ${{ env.DIGITALOCEAN_PROJECT_ID }} --spec app-spec.yaml
+      - name: upload app-spec to digitalOcean
+        run: doctl app update ${{ env.DIGITALOCEAN_PROJECT_ID }} --spec app-spec.yaml
