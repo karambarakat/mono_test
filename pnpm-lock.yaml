@@ -1,0 +1,71 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  libs/lib1:
+    specifiers:
+      _p2: workspace:lib2@^2.0.0
+      _p2_deprecated: workspace:lib2@^1.0.0
+      lodash.debounce: ^4.0.8
+    dependencies:
+      _p2: link:../lib2-new-alpha
+      _p2_deprecated: link:../lib2
+      lodash.debounce: 4.0.8
+
+  libs/lib2:
+    specifiers:
+      hello-world-npm: ^1.1.1
+      lodash.debounce: ^3.1.1
+      lodash.merge: ^4.6.2
+    dependencies:
+      hello-world-npm: 1.1.1
+      lodash.debounce: 3.1.1
+      lodash.merge: 4.6.2
+
+  libs/lib2-new-alpha:
+    specifiers:
+      hello-world-npm: ^1.1.1
+      lodash.debounce: ^3.1.1
+      lodash.merge: ^4.6.2
+    dependencies:
+      hello-world-npm: 1.1.1
+      lodash.debounce: 3.1.1
+      lodash.merge: 4.6.2
+
+  libs/lib3:
+    specifiers:
+      lodash.isequal: ^4.5.0
+    dependencies:
+      lodash.isequal: 4.5.0
+
+packages:
+
+  /hello-world-npm/1.1.1:
+    resolution: {integrity: sha512-BlANCUuBixe7YT2IzCtNsSmVn6TY//X+bEUJWJpX+v8H4waUVaJ9qJiHhnu+YHqk2jrFsqQ4DioU2wD8+sNPLw==}
+    hasBin: true
+    dev: false
+
+  /lodash._getnative/3.9.1:
+    resolution: {integrity: sha512-RrL9VxMEPyDMHOd9uFbvMe8X55X16/cGM5IgOKgRElQZutpX89iS6vwl64duTV1/16w5JY7tuFNXqoekmh1EmA==}
+    dev: false
+
+  /lodash.debounce/3.1.1:
+    resolution: {integrity: sha512-lcmJwMpdPAtChA4hfiwxTtgFeNAaow701wWUgVUqeD0XJF7vMXIN+bu/2FJSGxT0NUbZy9g9VFrlOFfPjl+0Ew==}
+    dependencies:
+      lodash._getnative: 3.9.1
+    dev: false
+
+  /lodash.debounce/4.0.8:
+    resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
+    dev: false
+
+  /lodash.isequal/4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: false
+
+  /lodash.merge/4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    dev: false
