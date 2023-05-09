@@ -1,0 +1,9 @@
+{
+  "extends": ["//"],
+  "pipeline": {
+    "start": {
+      "env": ["PORT"],
+      "dependsOn": []
+    }
+  }
+}
