@@ -1,0 +1,12 @@
+{
+  "$schema": "http://turbo.build/schema.json",
+  "pipeline": {
+    "start": {
+      "dependsOn": ["test"]
+    },
+    "test": {
+      "outputs": ["coverage/**"],
+      "dependsOn": []
+    }
+  }
+}

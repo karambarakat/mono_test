@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
-    "_p2_deprecated": "workspace:lib2@^1.0.0",
     "_p2": "workspace:lib2@^2.0.0"
   },
   "author": "",

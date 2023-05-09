@@ -8,11 +8,9 @@ importers:
   libs/lib1:
     specifiers:
       _p2: workspace:lib2@^2.0.0
-      _p2_deprecated: workspace:lib2@^1.0.0
       lodash.debounce: ^4.0.8
     dependencies:
       _p2: link:../lib2-new-alpha
-      _p2_deprecated: link:../lib2
       lodash.debounce: 4.0.8
 
   libs/lib2:
