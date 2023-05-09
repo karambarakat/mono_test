@@ -1,10 +1,10 @@
 {
-  "name": "lib3",
+  "name": "loner",
   "version": "1.0.0",
-  "description": "lib3",
+  "description": "loner package with no dependencies or dependents",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js && echo 'loner'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "lib3",

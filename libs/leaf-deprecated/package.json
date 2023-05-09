@@ -1,12 +1,12 @@
 {
-  "name": "lib2",
+  "name": "leaf",
   "version": "1.9.0",
-  "description": "",
+  "description": "leaf package; have `root` as a dependent; deprecated",
   "private": true,
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "hello-world-npm && echo 'lib2'"
+    "test": "hello-world-npm && echo 'leaf deprecated'"
   },
   "author": "",
   "license": "ISC",
