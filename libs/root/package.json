@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
-    "leaf": "workspace:leaf@^2.0.0",
-    "leaf_deprecated": "workspace:leaf@^1.0.0"
+    "leaf": "workspace:leaf@^2.0.0"
   },
   "author": "",
   "license": "ISC"
