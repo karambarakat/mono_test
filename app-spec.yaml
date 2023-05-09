@@ -1,7 +1,11 @@
 name: test-monorepos
 services:
-  - name: new
+  - name: new2
     git:
       repo_clone_url: https://github.com/karambarakat/mono_test.git
       branch: no-dup
     dockerfile_path: libs/root/Dockerfile
+    envs:
+      - key: SECRET
+        type: SECRET
+        scope: RUN_AND_BUILD_TIME
