@@ -1,12 +1,12 @@
 {
-  "name": "lib2",
-  "version": "1.9.0",
-  "description": "",
+  "name": "leaf",
+  "version": "2.0.0",
+  "description": "leaf package; have `root` as dependents",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "hello-world-npm && echo 'lib2'"
+    "start": "node index.js && echo 'leaf'",
+    "test": "hello-world-npm && echo 'leaf'"
   },
   "author": "",
   "license": "ISC",

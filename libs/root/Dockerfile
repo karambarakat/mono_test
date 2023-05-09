@@ -22,6 +22,5 @@ RUN pnpm run --filter strapi build
 
 
 # the run layer
-ENV PORT=8080
 EXPOSE 8080
-CMD ["pnpm", "run", "-filter", "strapi", "start"]
+CMD ["PORT=8080", "pnpm", "run", "-filter", "root", "start"]

@@ -1,6 +1,6 @@
 # build output
 dist
-out/
+out
 .next
 target
 packages/next/wasm/@next

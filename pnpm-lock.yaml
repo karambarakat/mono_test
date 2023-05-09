@@ -5,15 +5,7 @@ importers:
   .:
     specifiers: {}
 
-  libs/lib1:
-    specifiers:
-      _p2: workspace:lib2@^2.0.0
-      lodash.debounce: ^4.0.8
-    dependencies:
-      _p2: link:../lib2-new-alpha
-      lodash.debounce: 4.0.8
-
-  libs/lib2:
+  libs/leaf:
     specifiers:
       hello-world-npm: ^1.1.1
       lodash.debounce: ^3.1.1
@@ -23,7 +15,7 @@ importers:
       lodash.debounce: 3.1.1
       lodash.merge: 4.6.2
 
-  libs/lib2-new-alpha:
+  libs/leaf-deprecated:
     specifiers:
       hello-world-npm: ^1.1.1
       lodash.debounce: ^3.1.1
@@ -33,11 +25,21 @@ importers:
       lodash.debounce: 3.1.1
       lodash.merge: 4.6.2
 
-  libs/lib3:
+  libs/loner:
     specifiers:
       lodash.isequal: ^4.5.0
     dependencies:
       lodash.isequal: 4.5.0
+
+  libs/root:
+    specifiers:
+      leaf: workspace:leaf@^2.0.0
+      leaf_deprecated: workspace:leaf@^1.0.0
+      lodash.debounce: ^4.0.8
+    dependencies:
+      leaf: link:../leaf
+      leaf_deprecated: link:../leaf-deprecated
+      lodash.debounce: 4.0.8
 
 packages:
 
