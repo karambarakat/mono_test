@@ -3,8 +3,8 @@ run-name: deploy-do
 
 on:
   push:
-   branches: no-dup
-   
+    branches: no-dup
+
 jobs:
   deploy:
     name: install docts
@@ -14,4 +14,6 @@ jobs:
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - name: upload app-spec to digitalOcean
-        run: doctl app update ${{ env.DIGITALOCEAN_PROJECT_ID }} --spec app-spec.yaml
+        run: doctl app update $PROJECT_ID --spec app-spec.yaml
+        env:
+          PROJECT_ID: ${{ secrets.DIGITALOCEAN_PROJECT_ID }}
