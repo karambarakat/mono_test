@@ -3,7 +3,6 @@ run-name: deploy-do
 
 on:
   push:
-   branches: no-dup
    
 jobs:
   deploy:
