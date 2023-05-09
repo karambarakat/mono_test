@@ -1,7 +1,7 @@
 name: test-monorepos
 services:
-- name: new
-  git:
-    repo_clone_url: https://github.com/karambarakat/mono_test.git
-    branch: no-dup
-  dockerfile_path: libs/root/Dockerfile
+  - name: new
+    git:
+      repo_clone_url: https://github.com/karambarakat/mono_test.git
+      branch: no-dup
+    dockerfile_path: libs/root/Dockerfile
